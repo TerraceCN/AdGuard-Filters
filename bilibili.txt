@@ -1,0 +1,12 @@
+! Bilibili广告过滤增强 By TerraceCN
+
+! 移除广告过滤检测横幅
+bilibili.com##div.adblock-tips
+
+! 解决首页广告自带过滤后存在空div的问题
+bilibili.com##svg.bili-video-card__info--ad:upward(div.feed-card)
+bilibili.com##svg.bili-video-card__info--ad:upward(div.bili-video-card)
+
+! 过滤直播推荐
+bilibili.com##a[href^="https://live.bilibili.com"]:upward(div.bili-live-card)
+bilibili.com##a[href^="//live.bilibili.com"]:upward(div.floor-single-card)
